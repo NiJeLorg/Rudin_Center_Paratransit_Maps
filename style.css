@@ -1,0 +1,81 @@
+html, body, #map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.showLegend {
+    display: none;
+}
+
+.hideLegend {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+}
+
+.legend {    
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+    display: none;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    height: 140px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.legend-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: calc(100vw - 54px);
+} 
+
+@media (min-width: 616px) { 
+    .legend-wrapper {
+        top: 20px;
+        left: 276px;
+        max-width: calc(100vw - 100px);
+    } 
+}
+
+@media (min-width: 775px) { 
+    .legend-wrapper {
+        top: 24px;
+        left: 276px;
+        max-width: calc(100vw - 600px);
+    } 
+}
+
+@media (min-width: 1215px) {
+    .legend-wrapper {
+        top: 32px;
+        left: 344px;
+        max-width: calc(100vw - 675px);
+    } 
+}
+
+@media (min-width: 1315px) {
+    .legend-wrapper {
+        max-width: calc(100vw - 750px);
+    } 
+}
