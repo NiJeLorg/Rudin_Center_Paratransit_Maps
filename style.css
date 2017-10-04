@@ -36,11 +36,15 @@ button {
     font-family: 'Open Sans', sans-serif; 
     font-size: 12px;
     font-weight: 600;
-    padding: 10px;
-    height: 140px;
+    padding: 20px;
+    height: 200px;
     white-space: nowrap;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
+}
+
+.legendSVG {
+    height: 150px;
 }
 
 .legend-wrapper {
@@ -52,7 +56,6 @@ button {
 
 @media (min-width: 616px) { 
     .legend-wrapper {
-        top: 20px;
         left: 276px;
         max-width: calc(100vw - 100px);
     } 
@@ -61,7 +64,6 @@ button {
 @media (min-width: 775px) { 
     .legend-wrapper {
         top: 24px;
-        left: 276px;
         max-width: calc(100vw - 600px);
     } 
 }
