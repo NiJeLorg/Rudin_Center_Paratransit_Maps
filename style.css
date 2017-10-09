@@ -19,12 +19,15 @@ button {
 
 .showLegend {
     display: none;
+    cursor: pointer;
 }
 
 .hideLegend {
     position: absolute;
     bottom: 20px;
     right: 5px;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .legend {    
@@ -46,6 +49,109 @@ button {
 .legendSVG {
     height: 150px;
 }
+
+.chevron-right-fade {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: -webkit-linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    ); 
+    background-image: -moz-linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.chevron-right-fade:hover {
+    background: transparent;
+    cursor: pointer;
+}
+
+.chevron-right-wrapper {
+    position: absolute;
+    top: 37%;
+    right: 0;
+    color: #777;
+}
+
+.chevron-right-wrapper.hover {
+    color: #333;
+    cursor: pointer;
+}
+
+
+.chevron-left-fade {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: -webkit-linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    ); 
+    background-image: -moz-linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.chevron-left-fade:hover {
+    background: transparent;
+    cursor: pointer;
+}
+
+.chevron-left-wrapper {
+    position: absolute;
+    top: 37%;
+    left: 0;
+    color: #777;
+}
+
+.chevron-left-wrapper.hover {
+    color: #333;
+    cursor: pointer;
+}
+
 
 .legend-wrapper {
     position: absolute;
