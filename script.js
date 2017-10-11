@@ -20,10 +20,6 @@ $(function() {
     $(".chevron-right-fade").click(function(e){
         var leftPos = $('.legend').scrollLeft();
         $('.legend').animate({scrollLeft: leftPos + scrollPixels }, 800);
-        // $(".chevron-left-fade").show();
-        // if ($('.legendSVG').width() < (leftPos + scrollPixels  + $('.legend').width())) {
-        //     $(".chevron-right-fade").hide();
-        // }
     });  
 
     // change color of chevronon hover
@@ -35,10 +31,6 @@ $(function() {
     $(".chevron-left-fade").click(function(e){
         var leftPos = $('.legend').scrollLeft();
         $('.legend').animate({scrollLeft: leftPos - scrollPixels }, 800);
-        // $(".chevron-right-fade").show();
-        // if ((leftPos - scrollPixels ) <= 0) {
-        //     $(".chevron-left-fade").hide();
-        // }
     });  
 
     // change color of chevronon hover
